@@ -1,3 +1,86 @@
-body {
-    background-color: aqua;
+
+ body {
+    padding:0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+ }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+}
+/*header*/
+header{
+    background-color: red; 
+    padding: 1rem 0rem 0rem 0rem;  
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+/*navigation*/
+nav {
+    background-color: rgb(216, 211, 60);
+    padding: 2rem;
+} 
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 3rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+nav ul li a {
+    color: rgb(168, 111, 7);
+    text-decoration: none;
+    padding: 2rem ;
+}
+
+nav ul li a:hover {
+    background-color: orange;
+    color: red;
+}
+
+/*main et aside*/
+main{
+    flex: 2;
+    flex-direction: column;
+    background-color: blue;
+    text-align: justify;
+    padding: 1rem;
+}
+main h1{
+    text-align: center;
+    
+}
+
+aside {
+    flex: 1;
+    max-width: 25rem;
+    background-color: lightgray;
+    margin: 0;
+}
+
+
+
+/*footer*/
+
+footer{
+    background-color: rgb(216, 211, 60);
+    padding: 2rem;
+    text-align: center;
+
 }

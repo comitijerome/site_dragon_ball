@@ -1,7 +1,7 @@
-﻿<?php
+<?php
 
 class HomeController
-{   
+{
     public function index(): void
     {
         $jsonString = file_get_contents(__DIR__ . '/../data/home.json');
