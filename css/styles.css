@@ -1,3 +1,30 @@
+html,
 body {
-    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/*header*/
+#global-layout-header {
+    background-color: red;
+    padding: 0 0.5rem;
+}
+
+/*navigation*/
+#global-layout-nav {
+    background-color: rgb(216, 211, 60);
+    padding: 0.5rem;
+}
+
+.container {
+    flex: 1;
+    background-color: violet;
+    padding: 0.5rem;
 }

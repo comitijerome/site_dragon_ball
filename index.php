@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 require 'Controllers/HomeController.php';
 require 'Controllers/ErrorController.php';
@@ -13,11 +13,11 @@ if (isset($params['page'])) {
 switch ($page) {
     case '':
     case 'home':
-        $controller = new HomeController(); 
+        $controller = new HomeController();
         $controller->index();
         break;
 
     default:
-        $controller = new ErrorController(); 
-        $controller->pageNotFound(); 
+        $controller = new ErrorController();
+        $controller->pageNotFound();
 }
